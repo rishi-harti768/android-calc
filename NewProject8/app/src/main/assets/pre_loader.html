@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0 user-scalable=no">
+    <title>Loader</title>
+    <style>
+    	*{
+    		padding: 0;
+    		margin: 0;
+    		background-color: black;
+    	}
+        body{
+            width: 100vw;
+            height: 100vw;
+            overflow: hidden;
+        }
+        table{
+            width: 100vw;
+            height: 100vw;
+            border: 1px solid transparent;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+        td{
+            border: 1px solid transparent;
+        }
+        .l{
+            width: 96%;
+            height: 96%;
+            margin: auto;
+            background-image: linear-gradient(135deg, #ff6500 0%, #ff9800 50%,#ff9800 100%);
+            border-radius: 16%;
+        }
+        .l1{
+            animation: big 2s 0.5s linear infinite;
+        }
+        .l2{
+            animation: big 2s 1s linear infinite;
+        }
+        .l3{
+            animation: big 2s 1.5s linear infinite;
+        }
+        .l4{
+            animation: big 2s 2s linear infinite;
+        }
+        .l5{
+            animation: big 2s 2.5s linear infinite;
+        }
+        @keyframes big {
+            1%{
+                transform: scale(1);
+            }
+            50%{
+                transform: scale(0.2);
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td><div class="l l3"></div></td>
+            <td><div class="l l4"></div></td>
+            <td><div class="l l5"></div></td>
+        </tr>
+        <tr>
+            <td><div class="l l2"></div></td>
+            <td><div class="l l3"></div></td>
+            <td><div class="l l4"></div></td>
+        </tr>
+        <tr>
+            <td><div class="l l1"></div></td>
+            <td><div class="l l2"></div></td>
+            <td><div class="l l3"></div></td>
+        </tr>
+    </table>
+</body>
+</html>

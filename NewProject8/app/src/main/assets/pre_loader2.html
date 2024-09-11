@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <title>Loading</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            background-color: black;
+        }
+        .container{
+            aspect-ratio: 1/1;
+            width: 100%;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto;
+        }
+        .tile{
+            background-image: linear-gradient(to bottom right,#ff9800, #ff6500);
+            aspect-ratio: 1/1;
+        }
+        .t1{
+            border-radius: 50% 0 0 0;
+            animation-name: zoom_for_t1;
+            animation-duration: 2048ms;
+            animation-timing-function: ease-out;
+            animation-delay: 1024ms;
+            animation-iteration-count: infinite;
+        }
+        .t3{
+            border-radius: 0 50% 0 0;
+            animation-name: zoom_for_t3;
+            animation-duration: 2048ms;
+            animation-timing-function: ease-out;
+            animation-delay: 1536ms;
+            animation-iteration-count: infinite;
+        }
+        .t7{
+            border-radius: 0 0 0 50%;
+            animation-name: zoom_for_t7;
+            animation-duration: 2048ms;
+            animation-timing-function: ease-out;
+            animation-delay: 512ms;
+            animation-iteration-count: infinite;
+        }
+        .t9{
+            border-radius: 0 0 50% 0;
+            animation-name: zoom_for_t9;
+            animation-duration: 2048ms;
+            animation-timing-function: ease-out;
+            animation-delay: 1024ms;
+            animation-iteration-count: infinite;
+        }
+        .l2{
+            animation-name: zoom_for_rest;
+            animation-duration: 2048ms;
+            animation-timing-function: ease-out;
+            animation-delay: 768ms;
+            animation-iteration-count: infinite;
+        }
+        .l3{
+            animation-name: zoom_for_rest;
+            animation-duration: 2048ms;
+            animation-timing-function: ease-out;
+            animation-delay: 1024ms;
+            animation-iteration-count: infinite;
+        }
+        .l4{
+            animation-name: zoom_for_rest;
+            animation-duration: 2048ms;
+            animation-timing-function: ease-out;
+            animation-delay: 1280ms;
+            animation-iteration-count: infinite;
+        }
+        @keyframes zoom_for_t1 {
+            0%{
+                border-radius: 50% 0 0 0;
+                transform: scale(1);
+            }
+            50%
+            {
+                border-radius: 32%;
+                transform: scale(0.4);
+            }
+            100%{
+                border-radius: 50% 0 0 0;
+                transform: scale(1);
+            }
+        }
+        @keyframes zoom_for_t3 {
+            0%{
+                border-radius: 0 50% 0 0;
+                transform: scale(1);
+            }
+            50%
+            {
+                border-radius: 32%;
+                transform: scale(0.4);
+            }
+            100%{
+                border-radius: 0 50% 0 0;
+                transform: scale(1);
+            }
+        }
+        @keyframes zoom_for_t7 {
+            0%{
+                border-radius: 0 0 0 50%;
+                transform: scale(1);
+            }
+            50%
+            {
+                border-radius: 32%;
+                transform: scale(0.4);
+            }
+            100%{
+                border-radius: 0 0 0 50%;
+                transform: scale(1);
+            }
+        }
+        @keyframes zoom_for_t9 {
+            0%{
+                border-radius: 0 0 50% 0;
+                transform: scale(1);
+            }
+            50%
+            {
+                border-radius: 32%;
+                transform: scale(0.4);
+            }
+            100%{
+                border-radius: 0 0 50% 0;
+                transform: scale(1);
+            }
+        }
+        @keyframes zoom_for_rest{
+            0%{
+                border-radius: 0;
+                transform: scale(1);
+            }
+            50%
+            {
+                border-radius: 32%;
+                transform: scale(0.4);
+            }
+            100%{
+                border-radius: 0;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="tile t1"></div>
+        <div class="tile t2 l4"></div>
+        <div class="tile t3"></div>
+        <div class="tile t4 l2"></div>
+        <div class="tile t5 l3"></div>
+        <div class="tile t6 l4"></div>
+        <div class="tile t7"></div>
+        <div class="tile t8 l2"></div>
+        <div class="tile t9"></div>
+    </div>
+</body>
+</html>

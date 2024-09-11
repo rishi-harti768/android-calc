@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="signin">Sign In</string>
+	<string name="signup">Sign Up</string>
+	<string name="email">Email</string>
+	<string name="password">Password</string>
+	<string name="serverurl">https://calcvista.freewebhostmost.com/calc/</string>
+	<string name="webpin">35460831</string>
+	<string name="webdocs">https://unioncalc.great-site.net/calc/</string>
+</resources>

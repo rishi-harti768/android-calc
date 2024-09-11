@@ -1,0 +1,400 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<RelativeLayout
+		android:id="@+id/content"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+		<LinearLayout
+			android:id="@+id/screen"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="#000000"
+			android:orientation="vertical">
+			<LinearLayout
+				android:id="@+id/linear3"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingLeft="10dp"
+				android:paddingTop="10dp"
+				android:paddingRight="10dp"
+				android:background="#FF9800"
+				android:gravity="center_vertical"
+				android:orientation="horizontal">
+				<ImageView
+					android:id="@+id/accountic"
+					android:layout_width="60dp"
+					android:layout_height="60dp"
+					android:src="@drawable/ic_account_circle_white"
+					android:scaleType="fitCenter" />
+				<LinearLayout
+					android:id="@+id/uname"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="horizontal" />
+				<LinearLayout
+					android:id="@+id/empty"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:orientation="horizontal"
+					android:layout_weight="1" />
+				<ImageView
+					android:id="@+id/icsettings"
+					android:layout_width="60dp"
+					android:layout_height="60dp"
+					android:src="@drawable/ic_settings_white"
+					android:scaleType="fitCenter" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/dropIcon"
+				android:layout_width="match_parent"
+				android:layout_height="300dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="vertical">
+				<ImageView
+					android:id="@+id/icon"
+					android:layout_width="120dp"
+					android:layout_height="120dp"
+					android:src="@drawable/icon"
+					android:scaleType="fitCenter" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear9"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingLeft="10dp"
+				android:paddingRight="10dp"
+				android:paddingBottom="10dp"
+				android:orientation="horizontal">
+				<LinearLayout
+					android:id="@+id/linear10"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:orientation="horizontal"
+					android:layout_weight="1" />
+				<ImageView
+					android:id="@+id/icshare"
+					android:layout_width="60dp"
+					android:layout_height="60dp"
+					android:src="@drawable/ic_share_white"
+					android:scaleType="fitCenter" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear5"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="vertical"
+				android:layout_weight="1">
+				<LinearLayout
+					android:id="@+id/linear11"
+					android:layout_width="match_parent"
+					android:layout_height="120dp"
+					android:orientation="horizontal">
+					<androidx.viewpager.widget.ViewPager
+						android:id="@+id/viewpager1"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:background="@android:color/transparent" />
+				</LinearLayout>
+				<com.google.android.material.tabs.TabLayout
+					android:id="@+id/indicator"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:background="#000000"
+					app:tabBackground="@drawable/indicator"
+					app:tabGravity="center"
+					app:tabIndicatorHeight="0dp"
+					app:tabMaxWidth="30dp"
+					app:tabTextColor="#00000000"
+					app:tabSelectedTextColor="#00000000"
+					android:layout_gravity="bottom|center" />
+			</LinearLayout>
+		</LinearLayout>
+		<eightbitlab.com.blurview.BlurView
+			android:id="@+id/disability"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="horizontal">
+			<LinearLayout
+				android:id="@+id/linear6"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:padding="8dp"
+				android:background="@android:color/transparent"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="vertical">
+				<LinearLayout
+					android:id="@+id/undiplate"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#000000"
+					android:orientation="vertical">
+					<TextView
+						android:id="@+id/unHeader"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="Change Username"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#FF9800" />
+					<LinearLayout
+						android:id="@+id/linear2"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:gravity="center_horizontal|center_vertical"
+						android:orientation="horizontal">
+						<ImageView
+							android:id="@+id/unicacc"
+							android:layout_width="60dp"
+							android:layout_height="60dp"
+							android:src="@drawable/ic_account_circle_white"
+							android:scaleType="fitCenter" />
+						<LinearLayout
+							android:id="@+id/linear4"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:orientation="vertical">
+							<TextView
+								android:id="@+id/unuserid"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_marginLeft="8dp"
+								android:padding="8dp"
+								android:gravity="left|center_vertical"
+								android:text="ID: "
+								android:textSize="12sp"
+								android:textColor="#9E9E9E" />
+							<EditText
+								android:id="@+id/unnewun"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_marginLeft="8dp"
+								android:layout_marginTop="8dp"
+								android:padding="8dp"
+								android:background="@android:color/transparent"
+								android:textSize="12sp"
+								android:textColor="#FFFFFF"
+								android:hint="Username"
+								android:textColorHint="#FFFFFF"
+								android:singleLine="true"
+								android:imeOptions="actionDone" />
+						</LinearLayout>
+					</LinearLayout>
+					<LinearLayout
+						android:id="@+id/linear7"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="8dp"
+						android:orientation="horizontal">
+						<TextView
+							android:id="@+id/unbtncancel"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="Cancel"
+							android:textSize="12sp"
+							android:textColor="#FF9800"
+							android:layout_weight="1" />
+						<TextView
+							android:id="@+id/unbtnconfirm"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="8dp"
+							android:padding="8dp"
+							android:background="#FF9800"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="Confirm"
+							android:textSize="12sp"
+							android:textColor="#000000"
+							android:layout_weight="1" />
+					</LinearLayout>
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/stdiplate"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#000000"
+					android:orientation="vertical">
+					<TextView
+						android:id="@+id/stheader"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="Settings"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#FF9800" />
+					<Switch
+						android:id="@+id/stsdsw"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="8dp"
+						android:padding="8dp"
+						android:gravity="left|center_vertical"
+						android:text="Sound"
+						android:textSize="12sp"
+						android:textColor="#FFFFFF" />
+					<Switch
+						android:id="@+id/stvibsw"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="8dp"
+						android:padding="8dp"
+						android:gravity="left|center_vertical"
+						android:text="Vibration"
+						android:textSize="12sp"
+						android:textColor="#FFFFFF" />
+					<TextView
+						android:id="@+id/stbtnabout"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="8dp"
+						android:padding="8dp"
+						android:text="About Developer"
+						android:textSize="12sp"
+						android:textColor="#FFFFFF" />
+					<TextView
+						android:id="@+id/stbtntnc"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="8dp"
+						android:padding="8dp"
+						android:text="Terms &amp; Conditions"
+						android:textSize="12sp"
+						android:textColor="#FFFFFF"
+						android:rotation="359" />
+					<TextView
+						android:id="@+id/stbtnpp"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="8dp"
+						android:padding="8dp"
+						android:text="Privacy Policy"
+						android:textSize="12sp"
+						android:textColor="#FFFFFF"
+						android:lines="1" />
+					<LinearLayout
+						android:id="@+id/linear8"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="8dp"
+						android:orientation="horizontal">
+						<TextView
+							android:id="@+id/stbtnsout"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="Sign Out"
+							android:textSize="12sp"
+							android:textColor="#FF9800"
+							android:layout_weight="1" />
+						<TextView
+							android:id="@+id/stbtndone"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="8dp"
+							android:padding="8dp"
+							android:background="#FF9800"
+							android:gravity="center_horizontal|center_vertical"
+							android:text="Done"
+							android:textSize="12sp"
+							android:textColor="#000000"
+							android:layout_weight="1" />
+					</LinearLayout>
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/abdiplate"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:background="#000000"
+					android:orientation="vertical">
+					<TextView
+						android:id="@+id/abheader"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_margin="8dp"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="About Developer"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#FF9800" />
+					<TextView
+						android:id="@+id/abname"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_margin="8dp"
+						android:padding="8dp"
+						android:text="Name: Rishi Harti"
+						android:textSize="12sp"
+						android:textColor="#FFFFFF" />
+					<TextView
+						android:id="@+id/abcontact"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="8dp"
+						android:layout_marginRight="8dp"
+						android:layout_marginBottom="8dp"
+						android:padding="8dp"
+						android:text="Contact No. : +918861042764"
+						android:textSize="12sp"
+						android:textColor="#FFFFFF" />
+					<TextView
+						android:id="@+id/abemail"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="8dp"
+						android:layout_marginRight="8dp"
+						android:layout_marginBottom="8dp"
+						android:padding="8dp"
+						android:text="Email : rishie.harti\@gmail.com"
+						android:textSize="12sp"
+						android:textColor="#FFFFFF" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/Lddiplate"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="vertical">
+					<ProgressBar
+						android:id="@+id/progress"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:background="@android:color/transparent"
+						android:indeterminate="false"
+						style="?android:progressBarStyle"
+						android:layout_gravity="center_horizontal|center_vertical" />
+					<TextView
+						android:id="@+id/reason"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:paddingTop="10dp"
+						android:background="@android:color/transparent"
+						android:text="Loading…"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#FFFFFF"
+						android:layout_gravity="center_horizontal|center_vertical" />
+				</LinearLayout>
+			</LinearLayout>
+		</eightbitlab.com.blurview.BlurView>
+	</RelativeLayout>
+</LinearLayout>
